@@ -1,0 +1,66 @@
+.main-counter-container{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(207, 97, 97);
+}
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 4px;
+    transition: all 300ms ease;
+    box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.2) inset;
+    -webkit-box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.2) inset;
+    -moz-box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.2) inset;
+}
+
+.counter-container:hover{
+    border: 1px solid rgb(172, 172, 172);
+}
+
+.item-count{
+    color: black;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.button-itemcount{
+    color: rgb(212, 96, 96);
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.button-itemcount:hover{
+    color: rgb(228, 55, 55);
+}
+
+.add-cart {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .7rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 3px;
+    transition: all 300ms ease;
+    box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.2) inset;
+    -webkit-box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.2) inset;
+    -moz-box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.2) inset;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 20px ;
+    margin-top: 3px;
+    height: 1.5rem;
+}
+
+.add-cart:hover {
+    border: 1px solid rgb(172, 172, 172);
+}

@@ -1,12 +1,12 @@
 import React from 'react'
 import {TiShoppingCart} from 'react-icons/ti'
-import "./CartWidget.css"
+import './CartWidget.css'
 
 const CartWidget = (props) => {
   return (
-    <div className='cart-container'>
-      <TiShoppingCart className='cart-icon'/> Cantidad hardcoded: {props.cantidad}
-    </div>
+    <li className='cart-icon-text'>
+      <TiShoppingCart className='cart-icon'/>({props.cantidad})
+    </li>
   )
 }
 

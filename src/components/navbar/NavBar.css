@@ -9,16 +9,26 @@
     padding-left: 10px;
 }
 
-ul{
+ul .list{
     list-style-type: none;
-    text-align: ;
+    text-align: center;
 }
 
 li {
     display: inline;
     border: #ffffff 1px solid;
+    border-radius: 8px;
     margin-right: 10px;
-    padding: 0 4px;
+    padding: 4px 4px;
+    transition: all 400ms ease;
+}
+li:hover {
+    display: inline;
+    border: #ffffff 1px solid;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 4px 4px;
+    background-color: #ffffff;
 }
 
 a {
@@ -28,5 +38,10 @@ a {
 }
 
 a:hover {
-   color: #ffcece;
+   color: rgb(207, 97, 97);
+
   }
+
+
+
+
