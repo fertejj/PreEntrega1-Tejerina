@@ -21,13 +21,12 @@ function onAdd (){
 
   return (
     <div className='main-counter-container'>
-    <div className='counter-container'>
+     <div className='counter-container'>
         <IoRemove onClick={remOne} className='remove-item button-itemcount'/>
         <p className='item-count'>{counter}</p>
         <IoAdd onClick={addOne} className='add-item button-itemcount' />
-        
-    </div>
-    <button className='add-cart' onClick={onAdd}>Agregar al carrito</button>
+     </div>
+     <button className='add-cart' onClick={onAdd}>Agregar al carrito</button>
     </div>
   )
 }

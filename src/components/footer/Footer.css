@@ -1,5 +1,15 @@
 footer {
-    background-color: rgb(104, 8, 8);
+    background-color: var(--secundary-color);
     padding: 40px;
     text-align: center;
+    color: white;
+}
+
+.footer-link{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: white;
 }

@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer>Creado por <a href="http://www.fertejj.com/">Fernando Tejerina</a></footer>
+    <footer>Creado por <a className="footer-link" href="http://www.fertejj.com/">Fernando Tejerina</a></footer>
   )
 }
 

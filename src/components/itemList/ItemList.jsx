@@ -1,5 +1,6 @@
 import React from 'react'
 import Item from "../item/Item"
+import './ItemList.css'
 
 const ItemList = () => {
 
@@ -46,9 +47,9 @@ const ItemList = () => {
     />)
 
   return (
-    <div>
-      <p>Este es el item List</p>
-      {listaDeProductosRenderizables}
+    <div className="itemlist-container">
+      Este es el itemlist
+      <div className='itemlist'>{listaDeProductosRenderizables}</div>
     </div>
   )
 }

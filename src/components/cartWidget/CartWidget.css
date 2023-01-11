@@ -1,0 +1,16 @@
+.cart-icon-text{
+    border: none;
+}
+
+.cart-icon{
+    font-size: 24px;
+    color: var(--secundary-color);
+}
+
+.cart-number{
+    position: relative;
+    right: 6px;
+    bottom: 7px;
+    font-size: .7rem;
+    color: var(--secundary-color);
+}

@@ -2,10 +2,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: black;
+}
+
+h1{
+  margin: 0;
 }
 
 body {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
+  background-color: var(--bg-color);
+  color: black;
+  /* Paleta de colores */
+  --primary-color: #de1a1a;
+  --secundary-color: #643a71;
+  --secundary-color-var: #8b5fbf;
+  --terciary-color: #23967f;
+  --bg-color: #ededf4;
 }
+

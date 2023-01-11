@@ -4,9 +4,7 @@ import './CartWidget.css'
 
 const CartWidget = (props) => {
   return (
-    <li className='cart-icon-text'>
-      <TiShoppingCart className='cart-icon'/>({props.cantidad})
-    </li>
+    <li className='cart-icon-text'><TiShoppingCart className='cart-icon'/><li className='cart-number'>{props.cantidad}</li></li>
   )
 }
 

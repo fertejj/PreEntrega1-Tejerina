@@ -8,8 +8,8 @@ const ItemListContainer = () => {
 //mostrar todos los objs
 
   return (
-    <div className='main-section'>
-      <h3>CONTENEDOR DE PRODUCTOS (componente "ItemListContainer")</h3>
+    <div className='itemlistcontainer'>
+      <h3 className='itemlistcontainer-title'>CONTENEDOR DE PRODUCTOS (componente "ItemListContainer")</h3>
       <ItemList />
     </div>
   )
