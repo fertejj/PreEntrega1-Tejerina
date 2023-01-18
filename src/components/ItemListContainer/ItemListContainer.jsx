@@ -30,7 +30,7 @@ const ItemListContainer = () => {
       <button onClick={filterCocina}>Cocina</button>
       <button onClick={filterLiving}>Living</button>
       <button onClick={filterAll}>Sin Filtro</button>
-      <ItemList filtroCategoria={filtro} />
+      <ItemList />
     </div>
   );
 };

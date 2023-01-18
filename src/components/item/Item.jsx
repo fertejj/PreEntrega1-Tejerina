@@ -4,14 +4,15 @@ import ItemCount from '../itemCount/ItemCount'
 
 const Item = (props) => {
   //destructuracion
-  const {nombre, descripcion, categoria, precio, stock} = props.data
+  const {title, description, category, price, rating, image} = props.data
   return (
     <div className='item-producto'>
-        <h3>{nombre}</h3>
-        <p>Categoria: {categoria}</p>
-        <p>Descripcion: {descripcion}</p>
-        <p>Precio: ${precio}</p>
-        <ItemCount stock={stock} />
+        <h3>{title}</h3>
+        <img className="item-image" src={image} alt={`foto del producto ${title}`} />
+        <p>Categoria: {category}</p>
+        <p>Descripcion: {description}</p>
+        <p>Precio: ${price}</p>
+        <ItemCount stock={rating.count} />
     </div>
   )
 }
