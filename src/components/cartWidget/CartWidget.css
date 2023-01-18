@@ -9,7 +9,8 @@
 
 .cart-number{
     position: relative;
-    right: 6px;
+    margin: 0;
+    padding: 0;
     bottom: 7px;
     font-size: .7rem;
     color: var(--secundary-color);

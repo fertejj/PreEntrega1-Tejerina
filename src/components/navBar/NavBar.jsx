@@ -3,8 +3,6 @@ import './NavBar.css'
 import CartWidget from '../cartWidget/CartWidget'
 
 const NavBar = () => {
-  const fecha = new Date()
-  console.log()
   return (
   <header className='navbar'>
     <h1 className='navbar-title'>CHERRY</h1>
