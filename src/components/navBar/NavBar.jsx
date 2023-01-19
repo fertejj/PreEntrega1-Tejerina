@@ -10,7 +10,6 @@ const NavBar = () => {
     <ul className='navbar-links'>
       <li><Link className='navbar-link' to={`/`}>Inicio</Link></li>
       <li><Link className='navbar-link' to={`/productos`}>Productos</Link></li>
-      <li><Link className='navbar-link' to={`/categoria`}>Categoria</Link></li>
       <li><Link className='navbar-link' to={`/nosotros`}>Nosotros</Link></li>
       <CartWidget cantidad="7"/>
     </ul>
