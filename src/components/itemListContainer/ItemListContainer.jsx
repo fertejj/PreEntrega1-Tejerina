@@ -14,17 +14,17 @@ const ItemListContainer = (props) => {
       </h3>
       <p>Categorias:</p>
       <div className="category-button-container">
-        <Link to="/category/mens-clothing">
+        <Link to="/categoria/mens-clothing">
           <button onClick={() => setCategory("men's clothing")} className="category-button">
             men's clothing
           </button>
         </Link>
-        <Link to="/category/jewelery">
+        <Link to="/categoria/jewelery">
           <button onClick={() => setCategory("jewelery")} className="category-button">
             jewelery
           </button>
         </Link>
-        <Link to="/category/electronics">
+        <Link to="/categoria/electronics">
           <button onClick={() => setCategory("electronics")} className="category-button">
             electronics
           </button>
