@@ -9,7 +9,12 @@ const ItemCategory = ({ categoryId }) => {
 
     const cat = categoryId === 'mens-clothing' ? "men's clothing": categoryId
     console.log(cat);
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://fakestoreapi.com/products", {
+      'mode': 'no-cors',
+      'headers': {
+          'Access-Control-Allow-Origin': '*',
+      }
+  })
       .then((res) => res.json())
       .then((json) =>
         setProductos(
