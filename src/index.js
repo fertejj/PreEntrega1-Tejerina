@@ -6,6 +6,7 @@ import Home from './components/home/Home'
 import AboutUs from './components/aboutUs/AboutUs'
 import ItemListContainer from './components/itemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer'
+import ItemCategoryContainer from './components/itemCategoryContainer/ItemCategoryContainer'
 import Footer from './components/footer/Footer.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -17,7 +18,7 @@ root.render(
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/productos" element={<ItemListContainer navstatus="Estamos en la seccion productos" />} />
-        <Route exact path="/category/:productoId" element={<ItemListContainer navstatus="Estamos en la seccion productos" />} />
+        <Route exact path="/categoria/:categoryId" element={<ItemCategoryContainer navstatus="Estamos en la seccion productos" />} />
         <Route exact path="/producto/:productoId" element={<ItemDetailContainer />} />
         <Route exact path="/nosotros" element={<AboutUs/>} />
       </Routes>
