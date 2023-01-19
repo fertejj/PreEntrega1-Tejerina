@@ -11,8 +11,12 @@
     color: var(--primary-color);
     margin-left: 15px;
     font-family: 'Bree Serif', serif;
+    text-decoration: none;
 }
 
+.link-comp{
+    text-decoration: none;
+}
 
 .list{
     list-style-type: none;
