@@ -1,0 +1,5 @@
+.itemlist-home{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}

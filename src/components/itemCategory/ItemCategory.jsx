@@ -28,8 +28,8 @@ const ItemCategory = ({ categoryId }) => {
 
   
   return (
-    <div className="itemlist-container">
-    Este es la categoria x
+    <div className="itemlist-container-cat">
+    Este es la categoria {categoryId}
     <div className="itemlist">{productos}</div>
   </div>
   )

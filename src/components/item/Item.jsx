@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Item.css'
-import ItemCount from '../itemCount/ItemCount'
+
 
 
 const Item = (props) => {
   //destructuracion
-  const {title, description, category, price, rating, image, id} = props.data
+  const {title, description, category, price, image, id} = props.data
   return (
     <div className='item-producto'>
         <h3>{title}</h3>
@@ -15,7 +15,7 @@ const Item = (props) => {
         <p>Descripcion: {description}</p>
         <p>Precio: ${price}</p>
         <Link to={`/producto/${id}`}>Ver detalles</Link>
-        <ItemCount stock={rating.count} />
+
     </div>
   )
 }
