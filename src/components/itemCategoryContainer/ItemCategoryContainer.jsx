@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import ItemCategory from '../itemCategory/ItemCategory';
+import './ItemCategoryContainer.css'
 
 const ItemCategoryContainer = (props) => {
   const params = useParams()
@@ -10,11 +11,10 @@ const ItemCategoryContainer = (props) => {
 
   return (
     <div className="itemlistcontainer">
-      <p>{props.navstatus}</p>
       <h3 className="itemlistcontainer-title">
-        CONTENEDOR DE PRODUCTOS (componente "ItemListContainer")
+      Este es la categoria {categoryId}
       </h3>
-      <p>Categorias:</p>
+      <p>Filtrar categorias:</p>
       <div className="category-button-container">
         <Link to="/categoria/mens-clothing">
           <button  className="category-button">

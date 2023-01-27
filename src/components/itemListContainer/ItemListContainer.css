@@ -25,4 +25,5 @@
     border-radius: 3px;
     background-color: var(--secundary-color-var);
     color: aliceblue;
+    transition: all 250ms ease;
 }

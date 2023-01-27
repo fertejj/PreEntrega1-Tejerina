@@ -1,18 +1,17 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ItemList from "../itemList/ItemList";
 import "./ItemListContainer.css";
-import { Link } from "react-router-dom";
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   const [category, setCategory] = useState("all");
 
   return (
     <div className="itemlistcontainer">
-      <p>{props.navstatus}</p>
       <h3 className="itemlistcontainer-title">
-        CONTENEDOR DE PRODUCTOS (componente "ItemListContainer")
+        Nuestros productos
       </h3>
-      <p>Categorias:</p>
+      <p>Filtrar categorias:</p>
       <div className="category-button-container">
         <Link to="/categoria/mens-clothing">
           <button onClick={() => setCategory("men's clothing")} className="category-button">

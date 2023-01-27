@@ -1,7 +1,7 @@
 import React from 'react'
 import ItemDetail from "../itemDetail/ItemDetail"
 import { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import "./ItemDetailContainer.css"
 
 const ItemDetailContainer = () => {
@@ -19,7 +19,6 @@ const ItemDetailContainer = () => {
   return (
     <section className='itemDetail-box'>
       {productos}
-      <Link to="/productos"> Volver a la lista de productos</Link>
     </section>
   )
 }

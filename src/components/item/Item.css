@@ -5,12 +5,44 @@
     background-color: white;
     border: 1px solid rgb(217, 217, 217);
     border-radius: 10px;
-    margin: 5px;
-    padding-top: 5px;
+    margin: 7px;
+    padding: 5px;
     text-align: center; 
+
 }
 
 .item-image{
     width: 35%;
     margin: 0 auto;
+}
+
+.item-price{
+    padding-top: 5px;
+}
+
+.item-detail{
+    color: white;
+    margin: 0 auto;
+    width: 60%;
+    background-color: var(--secundary-color);
+    border-radius: 5px;
+    font-size: .9rem;
+    text-decoration: none;
+    padding: 2px;
+    padding-top: 4px;
+}
+
+.item-detail:hover{
+    background-color: var(--secundary-color-var);
+    color: white;
+    transition: all 250ms ease;
+}
+
+.item-image{
+    width: 50%;
+}
+
+.item-price{
+    font-size: .7rem;
+    font-weight: bold;
 }

@@ -1,3 +1,13 @@
 .itemDetail-box{
-    margin: 100px 15%;
+    margin: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 9px -4px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 9px -4px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 9px -4px rgba(0,0,0,0.7);
+}
+
+.volver-productos{
+    color: black;
+    text-align: center;
 }
