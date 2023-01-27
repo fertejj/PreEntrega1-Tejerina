@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./ItemDetail.css";
 import ItemCount from "../itemCount/ItemCount";
 
 const ItemDetail = (props) => {
-
+  const [cantidad, setCantidad] = useState(0)
+  
   const {title, description, category, price, rating, image} = props.data
+
+  useEffect(() => {
+    console.log(cantidad)
+  },[cantidad])
 
   return (
     <article className="itemDetail-producto">
@@ -17,7 +22,7 @@ const ItemDetail = (props) => {
       <p>Categoria: {category}</p>
       <p>Descripcion: {description}</p>
       <p>Precio: ${price}</p>
-      <ItemCount stock={rating.count} />
+      <ItemCount stock={rating.count} setCantidad={setCantidad} />
     </article>
   );
 };

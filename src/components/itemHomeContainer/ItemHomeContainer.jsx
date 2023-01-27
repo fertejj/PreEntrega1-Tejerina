@@ -24,7 +24,6 @@ const ItemHomeContainer = () => {
   
     return (
       <div className="itemlist-container-home">
-        Este es el itemlist
         <div className="itemlist-home">{productos}</div>
       </div>
     );

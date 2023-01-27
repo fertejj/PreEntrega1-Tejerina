@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import './ItemCount.css'
 import { IoAdd, IoRemove } from 'react-icons/io5'
+import './ItemCount.css'
 
 const ItemCount = (props) => {
 const [counter, setCounter] = useState(0)
@@ -12,7 +12,9 @@ function remOne (){ //Funcion con la condicion para no restar numeros negativos.
 }
 function addOne (){
     if(counter < props.stock){
-    setCounter(counter+1)}
+    setCounter(counter+1)
+    props.setCantidad(counter)
+  }
 }
 
 function onAdd (){
