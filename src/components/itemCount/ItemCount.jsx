@@ -9,6 +9,7 @@ const ItemCount = (props) => {
     //Funcion con la condicion para no restar numeros negativos.
     if (counter >= 1) {
       setCounter(counter - 1);
+      props.setCantidad(counter);
     }
   }
   function addOne() {

@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from "react";
-import "./ItemDetail.css";
 import { Link } from 'react-router-dom'
 import ItemCount from "../itemCount/ItemCount";
+import "./ItemDetail.css";
 
 const ItemDetail = (props) => {
   const [cantidad, setCantidad] = useState(0);
+  const [priceMultiplied, setPriceMultiplied] = useState()
 
   const { title, description, category, price, rating, image } = props.data;
 
   useEffect(() => {
-    console.log(cantidad);
+    setPriceMultiplied(cantidad * price)
+   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cantidad]);
+
+
+  const sumarCantidad = (numero) => {
+    setCantidad(numero)
+  }
 
   return (
     <article className="itemDetail-producto">
@@ -22,8 +29,8 @@ const ItemDetail = (props) => {
       />
       <p className="itemDetail-category">Categoria: {category}</p>
       <p className="itemDetail-descr">Descripcion: {description}</p>
-      <p className="itemDetail-price">Precio: ${price}</p>
-      <ItemCount className="itemDetail-count" stock={rating.count} setCantidad={setCantidad} />
+      <p className="itemDetail-price">Precio: ${priceMultiplied}</p>
+      <ItemCount className="itemDetail-count" stock={rating.count} setCantidad={sumarCantidad}/>
       <Link className='volver-productos' to="/productos"> Volver a la lista de productos</Link>
     </article>
   );
