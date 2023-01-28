@@ -3,36 +3,29 @@ import { IoAdd, IoRemove } from "react-icons/io5";
 import "./ItemCount.css";
 
 const ItemCount = (props) => {
-  const [counter, setCounter] = useState(0);
+  const [count, setCount] = useState(0);
 
   function remOne() {
-    //Funcion con la condicion para no restar numeros negativos.
-    if (counter >= 1) {
-      setCounter(counter - 1);
-      props.setCantidad(counter);
-    }
-  }
-  function addOne() {
-    if (counter < props.stock) {
-      setCounter(counter + 1);
-      props.setCantidad(counter);
+    if (count >= 1) {
+      setCount(count-1);
+      props.guardarCantidadBuy(count);
     }
   }
 
-  function onAdd() {
-    console.log(counter);
+  function addOne() {
+    if (count < props.stock) {
+      setCount(count+1);
+      props.guardarCantidadBuy(count);
+    }
   }
 
   return (
-    <div className="main-counter-container">
-      <div className="counter-container">
+    <div className="main-count-container">
+      <div className="count-container">
         <IoRemove onClick={remOne} className="remove-item button-itemcount" />
-        <p className="item-count">{counter}</p>
+        <p className="item-count">{count}</p>
         <IoAdd onClick={addOne} className="add-item button-itemcount" />
       </div>
-      <button className="add-cart" onClick={onAdd}>
-        Agregar al carrito
-      </button>
     </div>
   );
 };
