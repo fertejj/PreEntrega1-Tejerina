@@ -4,7 +4,6 @@ import ItemCount from "../itemCount/ItemCount";
 import "./ItemDetail.css";
 
 const ItemDetail = (props) => {
-
   const [cantidadDeProductosAComprar, setCantidadDeProductosAComprar] = useState(0);
   const { title, description, category, price, rating, image } = props.data;
 
