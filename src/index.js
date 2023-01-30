@@ -8,6 +8,7 @@ import ItemListContainer from './components/itemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer'
 import ItemCategoryContainer from './components/itemCategoryContainer/ItemCategoryContainer'
 import Footer from './components/footer/Footer.jsx';
+import Carrito from './components/carrito/Carrito';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
         <Route exact path="/categoria/:categoryId" element={<ItemCategoryContainer navstatus="Estamos en la seccion productos" />} />
         <Route exact path="/producto/:productoId" element={<ItemDetailContainer />} />
         <Route exact path="/nosotros" element={<AboutUs/>} />
+        <Route exact path="/carrito" element={<Carrito/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -38,8 +38,12 @@ li {
 .navbar-link {
     color: var(--secundary-color);
     border: 1px solid white;
-    padding: 3px 10px;
+    padding: 8px 8px;
     text-decoration: none;
+}
+
+.cart{
+    padding: 12px;
 }
 
 .navbar-link:hover {

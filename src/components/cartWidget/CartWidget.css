@@ -1,16 +1,19 @@
 .cart-icon-text{
     border: none;
+    margin-left: 5px;
 }
 
 .cart-icon{
     font-size: 24px;
     color: var(--secundary-color);
+    margin-right: 3px;
 }
 
 .cart-number{
     position: relative;
     margin: 0;
     padding: 0;
+    right: 15px;
     bottom: 7px;
     font-size: .7rem;
     color: var(--secundary-color);
