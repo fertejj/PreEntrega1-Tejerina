@@ -1,0 +1,14 @@
+.carrito-container{
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.title-carrito{
+    text-align: center;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}

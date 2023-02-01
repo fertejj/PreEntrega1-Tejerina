@@ -1,26 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom'
 import ItemCount from "../itemCount/ItemCount";
-import {CartProvider, useCartContext} from "../../context/CartContext";
+import {useCartContext} from "../../context/CartContext";
 import "./ItemDetail.css";
 
 const ItemDetail = (props) => {
   const [cantidadDeProductosAComprar, setCantidadDeProductosAComprar] = useState(0);
-  const { title, description, category, price, rating, image } = props.data;
-  const {mostrarMensaje} = useCartContext()
+  const { title, description, category, price, rating, image, id } = props.data;
+  const {agregarAlCarrito} = useCartContext()
   
-  useEffect(()=>{
+/*   useEffect(()=>{
     console.log(`estamos en itemDetail y el contador es ${cantidadDeProductosAComprar}, el total de su compra es = $${cantidadDeProductosAComprar*price}`);
   //eslint-disable-next-line
-  },[cantidadDeProductosAComprar])
+  },[cantidadDeProductosAComprar]) */
   
   const guardarCantidadBuy = (cantidadX) => {
     setCantidadDeProductosAComprar(cantidadX)
   }
 
   const onAdd = () => {
-    mostrarMensaje()
+    const productoAComprar = {
+      title: title,
+      price: price,
+      quantity: cantidadDeProductosAComprar,
+      id: id,
+      image: image,
+    }
+
+    agregarAlCarrito(productoAComprar)
   }
+
 
   return (
     <article className="itemDetail-producto">

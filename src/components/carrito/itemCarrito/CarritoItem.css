@@ -1,0 +1,12 @@
+.carrito-item-container{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    margin: 8px;
+}
+.carrito-item-pic{
+    width: 90%;
+}
+
+.carrito-item-text{
+    margin: 0 10px;
+}
