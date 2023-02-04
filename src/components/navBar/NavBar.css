@@ -36,7 +36,7 @@ li {
 }
 
 .navbar-link {
-    color: var(--secundary-color);
+    color: var(--secondary-color);
     border: 1px solid white;
     padding: 8px 8px;
     text-decoration: none;
@@ -47,8 +47,8 @@ li {
 }
 
 .navbar-link:hover {
-    border: 1px solid var(--secundary-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    color: var(--secundary-color-var);
+    color: var(--secondary-color-var);
     transition: all 250ms ease;
   }

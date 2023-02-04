@@ -15,9 +15,11 @@ body {
   color: black;
   /* Paleta de colores */
   --primary-color: #de1a1a;
-  --secundary-color: #643a71;
-  --secundary-color-var: #8b5fbf;
+  --secondary-color: #643a71;
+  --secondary-color-var: #8b5fbf;
   --terciary-color: #23967f;
   --bg-color: #ededf4;
+  /* Transiciones */
+  --transition: transition: all 250ms ease;
 }
 

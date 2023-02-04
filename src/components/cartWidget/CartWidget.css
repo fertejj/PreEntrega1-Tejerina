@@ -5,7 +5,7 @@
 
 .cart-icon{
     font-size: 24px;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
     margin-right: 3px;
 }
 
@@ -16,5 +16,5 @@
     right: 15px;
     bottom: 7px;
     font-size: .7rem;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
 }

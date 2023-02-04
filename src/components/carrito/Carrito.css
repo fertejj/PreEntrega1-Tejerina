@@ -4,11 +4,36 @@
     border-radius: 10px;
     margin: 10px auto;
 }
+.header-carrito{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--bg-color)
+}
 
 .title-carrito{
-    text-align: center;
+    text-align: left    ;
     height: auto;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
+    margin-left: 20px;
     font-weight: bold;
+}
+
+.vaciar-carrito{
+    margin: 13px;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: aliceblue;
+    width: 130px;
+    height: 40px;
+}
+
+.vaciar-carrito:hover{
+    border-radius: 10px;
+    background-color: var(--secondary-color-var);
+    color: aliceblue;
+    transition: all 250ms ease;
 }

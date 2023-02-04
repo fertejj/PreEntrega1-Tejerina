@@ -15,6 +15,22 @@ export const useCartContext = () => {
 
 const CartProvider = ({ children }) => {
   const [items, setItems] = useState([]);
+  
+  const cantidadDeItemsCarrito = () => {
+   /*  let cantidadSumada = 0 */
+      /* items.map(it => 
+        cantidadSumada = cantidadSumada + it.quantity) */
+
+      return (items.reduce((acc, prod) => acc += prod.quantity,0))
+      }
+
+  const validarProductoExistente = (id) => {
+    if (items.find((e) => e.id === id)) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
   const agregarAlCarrito = (data) => {
     if (validarProductoExistente(data.id)) {
@@ -27,16 +43,18 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  const validarProductoExistente = (id) => {
-    if (items.find((e) => e.id === id)) {
-      return true;
-    } else {
-      return false;
-    }
+  const borrarProductoDelCarrito = (id) => {
+    const nuevaLista = items.filter((e) => e.id !== id);
+    setItems(nuevaLista);
   };
 
+  const vaciarCarrito = () => {
+    setItems([]);
+  };
+
+
   return (
-    <CartContext.Provider value={{ items, agregarAlCarrito }}>
+    <CartContext.Provider value={{items, agregarAlCarrito, vaciarCarrito, borrarProductoDelCarrito, cantidadDeItemsCarrito}}>
       {children}
     </CartContext.Provider>
   );

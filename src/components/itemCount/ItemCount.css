@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     padding: 7px 15px;
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
     border-radius: 8px;
 }
 .count-container {
@@ -29,14 +29,14 @@
 }
 
 .button-itemcount{
-    color: var(--secundary-color-var);
+    color: var(--secondary-color-var);
     font-size: 18px;
     cursor: pointer;
     transition: all 300ms ease;
 }
 
 .button-itemcount:hover{
-    color: var(--secundary-color);
+    color: var(--secondary-color);
 }
 
 .add-cart {
@@ -55,5 +55,5 @@
 }
 
 .add-cart:hover {
-    border: 1px solid var(--secundary-color-var);
+    border: 1px solid var(--secondary-color-var);
 }

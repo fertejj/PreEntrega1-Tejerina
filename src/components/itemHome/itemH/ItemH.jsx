@@ -6,7 +6,7 @@ const ItemH = (props) => {
   const {title, price, image} = props.data
   return (
     <div className='item-producto-home'>
-        <img className="item-image" src={image} alt={`foto del producto ${title}`} />
+        <img className="item-imageHome" src={image} alt={`foto del producto ${title}`} />
         <p>Precio: ${price}</p>
 
     </div>

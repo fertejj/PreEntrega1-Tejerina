@@ -4,6 +4,7 @@ import './NavBar.css'
 import CartWidget from '../cartWidget/CartWidget'
 
 const NavBar = () => {
+
   return (
   <header className='navbar'>
     <Link className='link-comp' to={"/"}><h1 className='navbar-title'>CHERRY</h1></Link>

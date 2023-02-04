@@ -12,6 +12,7 @@ const CarritoList = (props) => {
         price={it.price}
         quantity={it.quantity}
         key={it.id}
+        id={it.id}
         image={it.image}
       />
     ))

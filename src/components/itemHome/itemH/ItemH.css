@@ -1,10 +1,13 @@
 .item-producto-home{
     display: grid;
     align-content: center;
-    justify-content: center;
+    justify-items: center;  
     background-color: white;
     border: 1px solid rgb(217, 217, 217);
     border-radius: 10px;
     text-align: center; 
 }
 
+.item-imageHome{
+    width: 100%
+}
